@@ -1,7 +1,8 @@
 import csv
 import json
 
-event_id = 271
+event_id = 277
+target_encoding = "iso-8859-1"
 mapping_file = f'mapping_{event_id}.json'
 files = {f'hajontakanta_{event_id}.txt': 1,
          f'kilpailijat_{event_id}.txt': 2,
@@ -56,7 +57,8 @@ def map_classes(rows, class_mappings, field):
 
 
 def write_file(filename, rows):
-    with open("patched/" + filename, 'w', newline='') as f:
+    with open("patched/" + filename, 'w', newline='',
+              encoding=target_encoding) as f:
         writer = csv.writer(f, delimiter='|', quoting=csv.QUOTE_NONE)
         writer.writerows(rows)
 

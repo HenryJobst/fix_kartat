@@ -1,0 +1,21 @@
+{
+  "Bahn A": ["D10","H10"],
+  "Bahn B": ["D12"],
+  "Bahn C": ["D14"],
+  "Bahn D": ["D16","D50","H70"],
+  "Bahn E": ["D35","H16","H55"],
+  "Bahn F": ["D19L","H45"],
+  "Bahn G": ["D40","H60"],
+  "Bahn H": ["D45","H65"],
+  "Bahn I": ["D19K","D55"],
+  "Bahn K": ["D60","D65","H75"],
+  "Bahn L": ["D70","D75","H80"],
+  "Bahn M": ["H12"],
+  "Bahn N": ["H14"],
+  "Bahn O": ["H18","H35"],
+  "Bahn P": ["H19L"],
+  "Bahn Q": ["H40"],
+  "Bahn R": ["H19K","H50"],
+  "Bahn T": ["OffL"],
+  "Bahn U": ["OffK"]
+}
