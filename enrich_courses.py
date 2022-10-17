@@ -1,7 +1,7 @@
 import csv
 import json
 
-event_id = 277
+event_id = 290
 target_encoding = "iso-8859-1"
 mapping_file = f'mapping_{event_id}.json'
 files = {f'hajontakanta_{event_id}.txt': 1,
@@ -21,7 +21,7 @@ def read_mappings(filename):
 def read_file(filename):
     data = []
     with open(filename, newline='', encoding='iso-8859-1') as f:
-        dialect = csv.Sniffer().sniff(f.read(1024))
+        dialect = csv.Sniffer().sniff(f.read(2048), delimiters='|')
         f.seek(0)
         reader = csv.reader(f,
                             delimiter='|',
